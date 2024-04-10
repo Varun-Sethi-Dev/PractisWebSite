@@ -1,0 +1,83 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /*Will not use it here as we dont want that all our card come next to next*/
+}
+
+.card {
+    height: 400px;
+    width: 300px;
+    border: 1px solid salmon;
+    border-radius: 20px;
+    /*Without flex how to bring card to center*/
+    position: absolute;
+    /*It will make our card's position absolute wrt. its parent(main)*/
+    top: 50%;
+    left: 50%;
+    /*The above will bring the start point of our card to the center of screen*/
+    transform: translate(-50%, -50%);
+    /*Will bring our card to center of screen by translating it*/
+    overflow: hidden;
+}
+.card:hover{
+    z-index: 10;
+}
+/*Our card 1 is behind all then 2 on it, 3 on 2 and fianlly 4 on top of all*/
+/*To bring 1 on top use method 2 i.e. z index to brign things on front or back*/
+#c1{
+    z-index: 4;
+}
+#c1:hover {
+    z-index: 5;
+}
+
+#c2 {
+    transform:translate(-50%,-50%)rotate(-6deg);
+    z-index: 3;
+}
+
+#c2:hover {
+    z-index: 5;
+}
+
+#c3 {
+    transform:translate(-50%,-50%)rotate(-12deg);
+    z-index: 2;
+}
+
+#c3:hover {
+    z-index: 5;
+}
+
+#c4 {
+    transform:translate(-50%,-50%)rotate(-18deg);
+    z-index: 1;
+}
+
+#c4:hover {
+    z-index: 5;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
