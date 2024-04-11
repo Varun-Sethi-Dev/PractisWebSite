@@ -1,1 +1,44 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main" class="main">
+        <div id="c1" class="card c1">
+            <img src="https://cdn.pixabay.com/photo/2023/10/31/16/38/ai-generated-8355516_640.png" alt="">
+        </div>
+        <div id="c2" class="card c2">
+            <img src="https://cdn.mos.cms.futurecdn.net/DVg3vj34mtKrKQhpy6z4H-1200-80.png" alt="">
+        </div>
+        <div id="c3" class="card c3">
+            <img src="https://assetsio.gnwcdn.com/Pokemon-Go-Clone-Charizard.jpg?width=690&quality=75&format=jpg&auto=webp" alt="">
+        </div>
+        <div id="c4" class="card c4">
+            <img src="https://i.pinimg.com/736x/d7/e5/8b/d7e58b21964287659a497c738ce6108f.jpg" alt="">
+        </div>
+        <!--
+            <div id="c4" class="card">
+            <h1>4</h1>
+        </div>
+        <div id="c3" class="card">
+            <h1>3</h1>
+        </div>
+        <div id="c2" class="card">
+            <h1>2</h1>
+        </div>
+        <div id="c1" class="card">
+            <h1>1</h1>
+        </div>
+        -->
+    </div>
+    <!--Our card 1 is behind all then 2 on it, 3 on 2 and fianlly 4 on top of all-->
+    <!--To bring 1 on top method 1 reaggrange the element in the html-->
+</body>
+
+</html>
